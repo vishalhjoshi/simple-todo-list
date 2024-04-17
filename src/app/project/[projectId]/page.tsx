@@ -1,3 +1,18 @@
+import { AddTaskInput } from "@/components/ui/add-task";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator";
+
 export default function Page({ params }: { params: { projectId: string } }) {
-  return <div>My Project: {params.projectId}</div>
+  return (
+    <div className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+      <div className="flex items-center">
+        <h1 className="text-lg font-semibold md:text-2xl">
+          {params.projectId}
+        </h1>
+      </div>
+      <Separator />
+      <AddTaskInput />
+    </div>
+  );
 }
