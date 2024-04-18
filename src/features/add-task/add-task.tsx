@@ -1,8 +1,8 @@
 "use client";
-import { Button } from "./button";
-import { Separator } from "./separator";
-import { Input } from "./input";
-import { ArrowBigUpDash, LucideSendHorizontal, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { Input } from "@/components/ui/input";
+import { ArrowBigUpDash, X } from "lucide-react";
 
 type Props = {};
 

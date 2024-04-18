@@ -1,7 +1,8 @@
-import { AddTaskInput } from "@/components/ui/add-task";
+import { AddTaskInput } from "@/features/add-task/add-task";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
+import { TaskList } from "@/features/task-list/task-list";
 
 export default function Page({ params }: { params: { projectId: string } }) {
   return (
@@ -12,6 +13,7 @@ export default function Page({ params }: { params: { projectId: string } }) {
         </h1>
       </div>
       <Separator />
+      <TaskList />
       <AddTaskInput />
     </div>
   );
